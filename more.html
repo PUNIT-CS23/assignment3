@@ -1,0 +1,87 @@
+<html>
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .foreground-images {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 2;
+            width: calc(100% - 40px); /* full width minus the padding */
+        }
+
+        .image-text-pair {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* space between image and text */
+        }
+
+        .foreground-image {
+            width: 300px;
+            height: auto;
+            box-shadow: 0 0 20px 10px white; /* white shadow around the image */
+        }
+
+        .text-box {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* semi-transparent white background */
+            box-shadow: 0 0 20px 10px white; /* white shadow around the text box */
+            width: calc(100% - 340px); /* full width minus image width and gap */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="Background2.jpg" class="background-image" ;>
+        <div class="foreground-images">
+            <div class="image-text-pair">
+                <img src="background3.jpg" class="foreground-image"border="2px";>
+                <div class="text-box">
+                    <p>Failing your 12th grade exams can be a tough experience, but it's important to remember that setbacks like this can also be valuable learning opportunities. Here are some important lessons you might take away from this experience:
+
+                    </p>
+                </div>
+            </div>
+            <div class="image-text-pair">
+                <img src="background4.jpg" class="foreground-image"border="2px";>
+                <div class="text-box">
+                    <p>This coming-of-age comedy-drama follows a high school junior navigating the complexities of friendship, family, and self-discovery after feeling like an outcast. Lesson: Embrace your uniqueness and learn from your mistakes as you navigate through challenges.a math teacher who transforms the lives of his students from a disadvantaged background by inspiring them to excel in calculus. Lesson: Believe in yourself and your abilities, and with determination, you can achieve greatness.</p>
+                </div>
+            </div>
+            <div class="image-text-pair">
+                <img src="background5.jpg" class="foreground-image"border="2px";>
+                <div class="text-box">
+                    <p>The 12th Fail movies offer valuable insights into resilience, determination, and the ability to learn and grow from failures or setbacks, making them relevant and inspiring for anyone facing challenges in their academic or personal life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+        
